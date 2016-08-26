@@ -14,7 +14,7 @@ var io = socketIO.listen(server);
 require("dotenv").load();
 
 
-MongoClient.connect('mongodb://localhost:27017/stock', function(err, db) {
+MongoClient.connect(process.env.MONGO_URI, function(err, db) {
     if (err) throw err;
     
     app.use('/public', express.static(process.cwd() + '/public'));
