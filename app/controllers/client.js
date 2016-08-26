@@ -1,7 +1,7 @@
 var codes = [];
 var seriesOptions = [],
     seriesCounter = 0;
-var socket = io.connect(window.location.origin);
+var socket = io.connect('https://stockk.herokuapp.com');
 
 function createChart() {
 
