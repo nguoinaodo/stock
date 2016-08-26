@@ -43,7 +43,7 @@ function drawChart() {
             endDate = date.getUTCFullYear() + '-' + date.getUTCDate() + '-' + (date.getUTCMonth() + 1);
         
         $.getJSON('https://www.quandl.com/api/v3/datasets/WIKI/' + code.toLowerCase() +
-                '/data.json?api_key=' + process.env.API_KEY, function (stockData) {
+                '/data.json?api_key=jG86yVpnBSVChzPjPTRj', function (stockData) {
             var chartData = [];
             
             $.each(stockData.dataset_data.data, function(i, datum) {
@@ -129,7 +129,7 @@ $(document).ready(function() {
             endDate = date.getUTCFullYear() + '-' + date.getUTCDate() + '-' + (date.getUTCMonth() + 1);
         
         $.getJSON('https://www.quandl.com/api/v3/datasets/WIKI/' + code.toLowerCase() +
-                '/data.json?api_key=' + process.env.API_KEY, function (stockData) {
+                '/data.json?api_key=jG86yVpnBSVChzPjPTRj', function (stockData) {
             var chartData = [];
             codes.push(code);
             
@@ -184,7 +184,7 @@ $(document).ready(function() {
                         endDate = date.getUTCFullYear() + '-' + date.getUTCDate() + '-' + (date.getUTCMonth() + 1);
                                 
                     $.getJSON('https://www.quandl.com/api/v3/datasets/WIKI/' + code.toLowerCase() +
-                            '/data.json?api_key=' + process.env.API_KEY, function (stockData) {
+                            '/data.json?api_key=jG86yVpnBSVChzPjPTRj', function (stockData) {
                         
                         var chartData = [];
                         
