@@ -1,7 +1,7 @@
 var codes = [];
 var seriesOptions = [],
     seriesCounter = 0;
-var socket = io.connect('https://stock-nguoinaodo.c9users.io');
+var socket = io.connect(window.location.origin);
 
 function createChart() {
 
